@@ -34,7 +34,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://Joey-Red.github.io/music-with-friends-front-end",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
