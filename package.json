@@ -1,6 +1,9 @@
 {
   "name": "spotify-web-app-api",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.14.2"
+  },
   "description": "",
   "author": "Joey <xjoey96@gmail.com>",
   "keywords": [],
