@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "start": "./bin/app",
+    "start": "node ./bin/app",
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "nodemon index.js"
   },

@@ -6,7 +6,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
-
+const PORT = process.env.port || 3001;
 // Connect To DB
 dotenv.config();
 const mongoDb = process.env.MONGODB_URI;
@@ -51,6 +51,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(PORT, () => {
   console.log("Server is running");
 });
