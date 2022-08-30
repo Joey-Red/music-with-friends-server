@@ -1,5 +1,5 @@
 {
-  "name": "spotify-web-app-api",
+  "name": "music-with-friends-api",
   "version": "1.0.0",
   "engines": {
     "node": "16.14.2"
