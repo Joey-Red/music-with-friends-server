@@ -23,7 +23,6 @@ mongoose.connect(
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "mongo connection error"));
 // Middleware
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
@@ -34,7 +33,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://joey-red.github.io/",
+    origin: "https://joey-red.github.io",
     methods: ["GET", "POST"],
   },
 });
